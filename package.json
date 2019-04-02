@@ -1,13 +1,35 @@
 {
   "name": "test-git-dependency",
-  "version": "1.0.5",
-  "description": "",
+  "version": "1.0.6",
+  "description": "Official Command Line Interface",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/feelepxyz/test-git-dependency.git"
   },
-  "author": "",
-  "license": "ISC",
+  "scripts": {
+    "test": "npm run clean && npm run build && mocha test --require babel-core/register",
+    "clean": "rm -rf dist && rm -rf test/*package*/node_modules && git checkout test/*package*/package.json || exit 0",
+    "build": "babel --copy-files -d dist/ src/",
+    "prepare": "npm run build"
+  },
+  "bin": {
+    "feelepxyz": "./dist/bin/feelepxyz.js",
+    "oc": "./dist/bin/feelepxyz.js"
+  },
+  "keywords": [
+    "feelepxyz",
+    "donate",
+    "donation",
+    "fundoss",
+    "npm"
+  ],
+  "author": "Feel Ep <@feelepxyz>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/feelepxyz/test-git-dependency/issues"
+  },
+  "homepage": "https://github.com/feelepxyz/test-git-dependency#readme",
   "dependencies": {
     "chalk": "1.1.3",
     "inquirer": "3.0.6",

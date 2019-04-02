@@ -1,6 +1,6 @@
 {
   "name": "test-git-dependency",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Official Command Line Interface",
   "main": "index.js",
   "repository": {

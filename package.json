@@ -1,17 +1,28 @@
 {
   "name": "tets-react-app-state",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
-  "license": "ISC",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/feelepxyz/test-git-dependency.git"
   },
+  "bin": {
+    "feelepxyz": "./dist/bin/feelepxyz.js",
+    "oc": "./dist/bin/feelepxyz.js"
+  },
+  "keywords": [
+    "feelepxyz",
+    "donate",
+    "donation",
+    "fundoss",
+    "npm"
+  ],
+  "author": "Feel Ep <@feelepxyz>",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/feelepxyz/test-git-dependency/issues"
   },

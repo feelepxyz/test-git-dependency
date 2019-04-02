@@ -1,8 +1,29 @@
 {
   "name": "test-git-dependency",
-  "version": "1.0.9",
+  "version": "1.0.10",
   "description": "Official Command Line Interface",
   "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/feelepxyz/test-git-dependency.git"
+  },
+  "scripts": {
+    "test": "npm run clean && npm run build && mocha test --require babel-core/register",
+    "clean": "rm -rf dist && rm -rf test/*package*/node_modules && git checkout test/*package*/package.json || exit 0",
+    "build": "babel --copy-files -d dist/ src/",
+    "prepare": "npm run build"
+  },
+  "bin": {
+    "feelepxyz": "./dist/bin/feelepxyz.js",
+    "oc": "./dist/bin/feelepxyz.js"
+  },
+  "keywords": [
+    "feelepxyz",
+    "donate",
+    "donation",
+    "fundoss",
+    "npm"
+  ],
   "author": "Feel Ep <@feelepxyz>",
   "license": "MIT",
   "bugs": {

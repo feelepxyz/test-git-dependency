@@ -1,13 +1,11 @@
 {
   "name": "test-git-dependency",
-  "version": "1.0.14",
+  "version": "1.0.15",
   "description": "",
   "main": "index.js",
   "author": "",
   "license": "ISC",
   "scripts": {
-    "test": "npm run clean && npm run build && mocha test --require babel-core/register",
-    "clean": "rm -rf dist && rm -rf test/*package*/node_modules && git checkout test/*package*/package.json || exit 0",
     "build": "babel --copy-files -d dist/ src/",
     "prepare": "npm run build"
   },

@@ -1,12 +1,10 @@
 {
   "name": "test-git-dependency",
-  "version": "1.0.13",
+  "version": "1.0.14",
   "description": "",
   "main": "index.js",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/feelepxyz/test-git-dependency.git"
-  },
+  "author": "",
+  "license": "ISC",
   "scripts": {
     "test": "npm run clean && npm run build && mocha test --require babel-core/register",
     "clean": "rm -rf dist && rm -rf test/*package*/node_modules && git checkout test/*package*/package.json || exit 0",

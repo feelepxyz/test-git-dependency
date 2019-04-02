@@ -1,14 +1,35 @@
 {
   "name": "test-git-dependency",
-  "version": "1.0.1",
-  "description": "",
+  "version": "1.0.2",
+  "description": "Official Command Line Interface",
   "main": "index.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/feelepxyz/test-git-dependency.git"
   },
-  "author": "",
+  "scripts": {
+    "test": "npm run clean && npm run build && mocha test --require babel-core/register",
+    "clean": "rm -rf dist && rm -rf test/*package*/node_modules && git checkout test/*package*/package.json || exit 0",
+    "build": "babel --copy-files -d dist/ src/",
+    "prepare": "npm run build"
+  },
+  "bin": {
+    "feelepxyz": "./dist/bin/feelepxyz.js",
+    "oc": "./dist/bin/feelepxyz.js"
+  },
+  "keywords": [
+    "feelepxyz",
+    "donate",
+    "donation",
+    "fundoss",
+    "npm"
+  ],
+  "author": "Feel Ep <@feelepxyz>",
   "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/feelepxyz/test-git-dependency/issues"
+  },
+  "homepage": "https://github.com/feelepxyz/test-git-dependency#readme",
   "dependencies": {
     "chalk": "1.1.3",
     "inquirer": "3.0.6",
@@ -16,5 +37,15 @@
     "node-fetch": "1.6.3",
     "babel-polyfill": "6.23.0",
     "opn": "4.0.2"
+  },
+  "devDependencies": {
+    "babel-cli": "6.24.1",
+    "babel-core": "6.24.1",
+    "babel-preset-es2015": "6.24.1",
+    "babel-preset-stage-0": "6.24.1",
+    "babel-register": "6.14.0",
+    "chai": "3.5.0",
+    "cross-env": "4.0.0",
+    "mocha": "3.2.0"
   }
 }

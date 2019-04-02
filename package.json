@@ -1,26 +1,8 @@
 {
-  "name": "tets-react-app-state",
-  "version": "1.0.8",
-  "description": "",
+  "name": "test-git-dependency",
+  "version": "1.0.9",
+  "description": "Official Command Line Interface",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/feelepxyz/test-git-dependency.git"
-  },
-  "bin": {
-    "feelepxyz": "./dist/bin/feelepxyz.js",
-    "oc": "./dist/bin/feelepxyz.js"
-  },
-  "keywords": [
-    "feelepxyz",
-    "donate",
-    "donation",
-    "fundoss",
-    "npm"
-  ],
   "author": "Feel Ep <@feelepxyz>",
   "license": "MIT",
   "bugs": {

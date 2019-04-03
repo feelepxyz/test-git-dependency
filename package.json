@@ -1,12 +1,12 @@
 {
   "name": "test-git-dependency",
-  "version": "1.0.19",
+  "version": "1.0.20",
   "description": "",
   "main": "index.js",
   "author": "",
   "license": "ISC",
   "scripts": {
-    "prepare": "exit 1"
+    "prepare": "echo \"Error: no script specified\" && exit 1"
   },
   "dependencies": {
     "minimist": "1.2.0"

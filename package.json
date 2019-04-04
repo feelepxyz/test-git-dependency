@@ -1,6 +1,6 @@
 {
   "name": "test-git-dependency",
-  "version": "1.0.29",
+  "version": "1.0.30",
   "description": "git test with broken prepare",
   "main": "index.js",
   "author": "",
@@ -9,6 +9,6 @@
     "prepare": "echo \"Error: no script specified!\" && exit 1"
   },
   "dependencies": {
-    "minimist": "1.2.0"
+    "minimist": "1.1.3"
   }
 }

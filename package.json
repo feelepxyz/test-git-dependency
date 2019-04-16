@@ -1,14 +1,18 @@
 {
   "name": "test-git-dependency",
-  "version": "1.0.31",
+  "version": "1.0.32",
   "description": "git test with broken prepare",
-  "main": "index.js",
+  "main": "lib/index.js",
   "author": "",
   "license": "ISC",
   "scripts": {
-    "prepare": "echo \"Error: no script specified!\" && exit 1"
+    "prepare": "tsc",
+    "prepublish": "echo \"Error: no script specified!\" && exit 1"
   },
   "dependencies": {
     "minimist": "1.2.0"
+  },
+  "devDependencies": {
+    "typescript": "^3.4.3"
   }
 }

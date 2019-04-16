@@ -1,6 +1,6 @@
 {
   "name": "test-git-dependency",
-  "version": "1.0.32",
+  "version": "1.0.33",
   "description": "git test with broken prepare",
   "main": "lib/index.js",
   "author": "",
